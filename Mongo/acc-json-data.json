@@ -1,0 +1,226 @@
+[
+{ 
+    "_id" : ObjectId("5e39a60a9d4eab6964404901"), 
+    "acctId" : "CITI123456", 
+    "acctName" : "Jayashri Jaigaya", 
+    "bankDetails" : {
+        "bankId" : "1234", 
+        "bankName" : "CITIBANK", 
+        "IFSC" : "CITI0000005", 
+        "branchCode" : "2342"
+    }, 
+    "contacts" : {
+        "contactNumber" : "8793439520", 
+        "email" : "jayashrij@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "Citi Bank Akola, Yamuna Tarang Complex, ", 
+        "addressLine2" : "Kirti Nagar", 
+        "landmark" : "Near Ramlata Business Centre", 
+        "city" : "Akola", 
+        "state" : "Maharastra", 
+        "country" : "India", 
+        "zip" : NumberInt(444004)
+    }, 
+    "amount" : 50009.956, 
+    "accountType" : "saving", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "04/02/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "04/02/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a56e49d4eab6964404902"), 
+    "acctId" : "CITI123457", 
+    "acctName" : "Pooja Agrawal", 
+    "bankDetails" : {
+        "bankId" : "1235", 
+        "bankName" : "CITIBANK", 
+        "IFSC" : "CITI0000001", 
+        "branchCode" : "2343"
+    }, 
+    "contacts" : {
+        "contactNumber" : "8793439520", 
+        "email" : "poojaAgrawal@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "Kanak Building, 41", 
+        "addressLine2" : " ", 
+        "landmark" : "Chowringhee Road", 
+        "city" : "kolakata", 
+        "state" : "West Bengal", 
+        "country" : "India", 
+        "zip" : NumberInt(700071)
+    }, 
+    "amount" : 510009.9, 
+    "accountType" : "current", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "03/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "02/02/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a5d209d4eab6964404903"), 
+    "acctId" : "CITI123458", 
+    "acctName" : "Nalini Wanjale", 
+    "bankDetails" : {
+        "bankId" : "1235", 
+        "bankName" : "CITIBANK", 
+        "IFSC" : "CITI0000002", 
+        "branchCode" : "2344"
+    }, 
+    "contacts" : {
+        "contactNumber" : "8793439520", 
+        "email" : "naliniwanjale123@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "Ground and 1st Floor, DLF Capital Point", 
+        "addressLine2" : " Connaught Place", 
+        "landmark" : " Baba Kharak Singh Marg,", 
+        "city" : "New Delhi", 
+        "state" : "Delhi", 
+        "country" : "India", 
+        "zip" : NumberInt(110001)
+    }, 
+    "amount" : 5510009.9, 
+    "accountType" : "current", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "05/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "03/02/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a678b9d4eab6964404904"), 
+    "acctId" : "CITI123458", 
+    "acctName" : "Archana Khambe", 
+    "bankDetails" : {
+        "bankId" : "1236", 
+        "bankName" : "CITIBANK", 
+        "IFSC" : "CITI0000003", 
+        "branchCode" : "2344"
+    }, 
+    "contacts" : {
+        "contactNumber" : "9793439520", 
+        "email" : "archanakhambe1995@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "50, C.P. Ramaswamy Road, 3rd Street", 
+        "addressLine2" : "Abhiramapuram", 
+        "landmark" : "Alwarpet", 
+        "city" : "Chennai", 
+        "state" : "Tamil Nadu", 
+        "country" : "India", 
+        "zip" : NumberInt(600018)
+    }, 
+    "amount" : 5510049.59, 
+    "accountType" : "loan", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "03/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "01/02/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a68889d4eab6964404905"), 
+    "acctId" : "CITI123459", 
+    "acctName" : "Amresh sahoo", 
+    "bankDetails" : {
+        "bankId" : "1224", 
+        "bankName" : "Jayanagar Branch", 
+        "IFSC" : "CITI0000004", 
+        "branchCode" : "4563"
+    }, 
+    "contacts" : {
+        "contactNumber" : "9793659520", 
+        "email" : "amreshsahoo453@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "No. 91, Prestige South End", 
+        "addressLine2" : "South End Road", 
+        "landmark" : "Opposite Surana College", 
+        "city" : "Bangalore", 
+        "state" : "Karnataka", 
+        "country" : "India", 
+        "zip" : NumberInt(560004)
+    }, 
+    "amount" : 651049.49, 
+    "accountType" : "salary", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "01/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "29/01/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a81939d4eab6964404906"), 
+    "acctId" : "CITI123460", 
+    "acctName" : "vikesh pawar", 
+    "bankDetails" : {
+        "bankId" : "1227", 
+        "bankName" : "pune", 
+        "IFSC" : "CITI0000005", 
+        "branchCode" : "4563"
+    }, 
+    "contacts" : {
+        "contactNumber" : "9793659534", 
+        "email" : "vikeshP23@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "Ground Floor, Onyx Tower,37/3 Ghorpadi", 
+        "addressLine2" : "North Koregaon Park Main Road", 
+        "landmark" : "Near Westin Hotel,", 
+        "city" : "pune", 
+        "state" : "Maharastra", 
+        "country" : "India", 
+        "zip" : NumberInt(411001)
+    }, 
+    "amount" : 6049.2349, 
+    "accountType" : "loan", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "05/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "29/01/2020"
+    }
+},
+{ 
+    "_id" : ObjectId("5e3a820d9d4eab6964404907"), 
+    "acctId" : "CITI123460", 
+    "acctName" : "Shri Bhartiya", 
+    "bankDetails" : {
+        "bankId" : "1228", 
+        "bankName" : "pune", 
+        "IFSC" : "CITI0000005", 
+        "branchCode" : "4563"
+    }, 
+    "contacts" : {
+        "contactNumber" : "9793659534", 
+        "email" : "shriBhartiya43@gmail.com"
+    }, 
+    "address" : {
+        "addressLine1" : "Ground Floor, Onyx Tower,37/3 Ghorpadi", 
+        "addressLine2" : "North Koregaon Park Main Road", 
+        "landmark" : "Near Westin Hotel,", 
+        "city" : "pune", 
+        "state" : "Maharastra", 
+        "country" : "India", 
+        "zip" : NumberInt(411001)
+    }, 
+    "amount" : 126049.05, 
+    "accountType" : "saving", 
+    "audit" : {
+        "createdBy" : "Ajit Bhavle", 
+        "createdDate" : "05/01/2020", 
+        "modifiedBy" : "Ajit Bhavle", 
+        "modifiedDate" : "29/01/2020"
+    }
+}
+]

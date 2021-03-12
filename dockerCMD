@@ -1,0 +1,44 @@
+docker container create --name cucumberapi <imageName>
+
+tag image
+ docker tag <image_id> <tagname>
+ 
+create a new container based on the image we just created and start it.
+	docker run --name <container name> -d -p 80:80 <imageName>
+	The -d option tells Docker to run the container detached so we get our command prompt back.
+	
+	docker run --name orchestration -d -p 9090:9090 ba32e5839de2
+	docker run --name gpwrite -d -p 8086:8086 68c238895c55
+
+Docker Commit: docker commit -m "Message" -a "Author Name" [containername] [imagename]
+
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' container_id
+
+docker inspect -f {{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}} d5469e5f9fdb 
+
+
+Orchestration: 172.17.3.177
+
+
+
+FROM openjdk:8
+ADD target/docker-orchestration-service.jar docker-orchestration-service.jar
+ADD target/config.properties /app/config/config.properties
+ADD target/start.bat start.bat
+EXPOSE 9090
+#ENV PATH $PATH:/opt/jre/latest/bin
+
+ENTRYPOINT ["start.bat"]
+
+RUN mkdir /app/ \
+    && chmod -R 777 /app \
+    && chown -R 1001:1001 /app
+
+
+ -Dlogback.configurationFile=/app/logback.xml
+
+
+
+, D:/AjitAltimetrik/ArgentinaTransformation/account/logs/gpread/gpread.log, D:/AjitAltimetrik/ArgentinaTransformation/account/logs/gpwrite/gpwrite.log
+
+logstash.bat -f logstash.conf --config.reload.automatic

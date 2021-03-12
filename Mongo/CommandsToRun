@@ -1,0 +1,125 @@
+References:
+Name: Ritesh Waghmare
+Reporting Relation: Reporting Manager
+Associated Company: Altimetrik
+Phone No.: 7387099670
+Years Associated: 1.6 years
+
+
+Name: Apurwa Nirwan
+Reporting Relation: Team Lead
+Associated Company: Altimetrik
+Phone No.: 9028974779
+Years Associated: 1.6 years
+
+
+
+Orchestration: java -DCONFIG_DIR=D:\AjitAltimetrik\ArgentinaTransformation\ArgentinaPOC\orchestration-service\src\main\resources\cloud_vm\DEV -jar orchestration-service-0.0.1-SNAPSHOT.jar
+
+gpread: java -DCONFIG_DIR=D:\AjitAltimetrik\ArgentinaTransformation\ArgentinaPOC\gpread\src\main\resources\cloud_vm\DEV -jar graphqlService-0.0.1-SNAPSHOT.jar 
+
+gpwrite: java -DCONFIG_DIR=D:\AjitAltimetrik\ArgentinaTransformation\ArgentinaPOC\gpwrite\src\main\resources\cloud_vm\DEV -jar gpwrite-0.0.1-SNAPSHOT.jar 
+
+
+Kafka Run: bin\windows\kafka-server-start.bat config\server.properties
+
+3867725237
+
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-get-request 
+
+ 
+
+bin\windows\kafka-topics --create --zookeeper 172.18.0.2:2181 --replication-factor 1 --partitions 1 --topic account-get-response 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-post-request 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-post-response 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-put-request 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-put-response 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-delete-request 
+
+ 
+
+bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic account-delete-response 
+
+
+
+
+
+{
+account(acctId: "CITI60036")
+{id acctId acctName amount bankDetails{bankId bankName ifsc branchCode}
+contacts{contactNumber email}
+addressDetails{addressLine1 addressLine2 city state country zip landmark}
+amount accountType status
+audit{createdBy createdDate modifiedBy modifiedDate}
+}
+}
+
+
+{
+allAccounts{id acctId acctName amount bankDetails{bankId bankName ifsc branchCode}
+contacts{contactNumber email}
+addressDetails{addressLine1 addressLine2 city state country zip landmark}
+amount accountType status
+audit{createdBy createdDate modifiedBy modifiedDate}
+}
+}
+
+
+{
+allAccounts(skip:0,first:5,country:"INDIA"){id acctId acctName amount bankDetails{bankId bankName ifsc branchCode}
+contacts{contactNumber email}
+addressDetails{addressLine1 addressLine2 city state country zip landmark}
+amount accountType status
+audit{createdBy createdDate modifiedBy modifiedDate}
+accCreatedDate accUpdatedDate
+}
+} 
+
+ 
+https://r2schools.com/step-by-step-mongodb-replication-setup-on-windows/ 
+
+
+spring.data.mongodb.host= 10.3.66.124
+spring.data.mongodb.port=27017	
+
+
+spring.data.mongodb.database=argentinapaymentdb
+spring.data.mongodb.port=27017
+
+
+localip: docker network connect --ip 10.3.66.124 kafka-single-node_default 5c9b9191e8d9
+
+route -p add 172.18.0.0 mask 255.255.255.0 192.168.1.102
+
+zookeeper: 172.18.0.2
+
+Kafka: 172.18.0.3 
+
+Orchestration: 172.18.0.5
+gpwrite: 172.18.0.6
+
+
+docker run --name orche --network=kafka-single-node_default --ip=172.18.0.5 -d -p 9090:9090 003bade8a634
+
+spring.data.mongodb.uri: mongodb://172.18.0.4:27017/argentinapaymentdb
+
+citi.config.kafka.bootstrap-server: 172.18.0.3:9092
+
+
+
